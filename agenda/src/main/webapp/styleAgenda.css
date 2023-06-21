@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,500&family=Rajdhani&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #3beca8, #9939be);
+	padding: 10px;
+}
+
+img{
+    width: 400px;
+}
+
+.container-agenda{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 1000px;
+	width: 100%;
+	background: #fff;
+	padding: 25px 30px;
+	border-radius: 5px;
+    gap: 40px;	
+}
+
+.title-agenda{
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 32px;
+	font-weight: 500px;
+	position: relative;
+}
+
+.title-agenda::before{
+	margin: -4px;
+    content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 260px;
+	background: linear-gradient(135deg, #3beca8, #9939be);
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25, 0;
+    font-size: 15px;
+    min-width: 400px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+.content-table thead tr{
+    background: linear-gradient(135deg, #3beca8, #9939be);
+    color: #fff;
+    text-align: left;
+}
+
+.content-table th{
+    padding: 12px 15px; 
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #3beca8;
+}
+
+.btn-agenda {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-primary{
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 18px;
+	font-weight: 400;	
+	width: 190px;
+	height: 40px;
+	background-color: #0088cc;
+	color: #fff;
+	padding: 5px 8px;
+	border: 1px solid #0088cc;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all .2s ease;
+}
+
+.btn-primary:hover{
+	background-color: #fff;
+	color: #0088cc;
+}
+
+.btn-danger{
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 18px;
+	font-weight: 400;	
+	width: 190px;
+	height: 40px;
+	background-color: #d2322d;
+	color: #fff;
+	padding: 5px 8px;
+	border: 1px solid #d2322d;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all .2s ease;
+}
+
+.btn-danger:hover{
+	background-color: #fff;
+	color: #d2322d;
+}
+
+.btn-info{
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 18px;
+	font-weight: 400;	
+	width: 190px;
+	height: 40px;
+	background-color:#5bc0de;
+	color:#fff;
+	padding: 5px 8px;
+	border: 1px solid #5bc0de;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all .2s ease;
+}
+
+.btn-info:hover {
+	background-color: #fff;
+	color: #5bc0de;
+}
