@@ -19,13 +19,13 @@ public class DAO {
 	private String driver = "com.mysql.cj.jdbc.Driver";
 	
 	/** The url. */
-	private String url = "jdbc:mysql://localhost:3306/dbagenda?useTimezone=true&serverTimezone=UTC";
+	private String url = "jdbc:"+${DATABASE_URL};
 	
 	/** The user. */
-	private String user = "root";
+	private String user = ${USER};
 	
 	/** The password. */
-	private String password = "root";
+	private String password = ${PASSWORD};
 
 	/**
 	 * Conectar.
