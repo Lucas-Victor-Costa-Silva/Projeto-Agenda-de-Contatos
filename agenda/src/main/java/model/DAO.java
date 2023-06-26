@@ -36,7 +36,8 @@ public class DAO {
 		Connection con = null;
 		try {
 			Class.forName(driver);
-			con = DriverManager.getConnection("jdbc:mysql://aws.connect.psdb.cloud/db-agenda?sslMode=VERIFY_IDENTITY", "au7en66aw5kob3q8gqwr", "pscale_pw_h0HVCmwoBjyGsKqPgPP1M0DxTAiQw9iHxahG6LgH9mK");
+			con = DriverManager.getConnection(url, user, password);
+			//con = DriverManager.getConnection("jdbc:mysql://aws.connect.psdb.cloud/db-agenda?sslMode=VERIFY_IDENTITY", "au7en66aw5kob3q8gqwr", "pscale_pw_h0HVCmwoBjyGsKqPgPP1M0DxTAiQw9iHxahG6LgH9mK");
 			return con;
 		} catch (Exception e) {
 			System.out.println(e);

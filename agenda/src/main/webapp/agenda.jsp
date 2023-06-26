@@ -21,6 +21,9 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 		<div class="title-agenda">Meus Contatos</div>
 		<div class="table">
 			<table class="content-table">
+				<%
+				if (lista != null) {
+				%>
 				<thead>
 					<tr>
 						<th>Nome</th>
@@ -45,6 +48,7 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 						</th>
 					</tr>
 					<%
+					}
 					}
 					%>
 				</tbody>
