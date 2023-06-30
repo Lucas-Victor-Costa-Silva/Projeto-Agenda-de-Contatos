@@ -4,7 +4,7 @@
 <%@page import="java.util.ArrayList"%>
 
 <%
-@ SuppressWarnings ("unchecked")
+@SuppressWarnings("unchecked")
 ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contatos");
 %>
 
@@ -42,8 +42,10 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 						<th><%=lista.get(i).getEmail()%></th>
 						<th>
 							<div class=".btn-agenda">
-								<a class="btn-primary" href="select?idcon=<%=lista.get(i).getIdecon()%>">Editar</a>
-								<a class="btn-danger" href="javascript: confirmar(<%=lista.get(i).getIdecon()%>)">Deletar</a>
+								<a class="btn-primary"
+									href="select?idcon=<%=lista.get(i).getIdecon()%>">Editar</a> <a
+									class="btn-danger"
+									href="javascript: confirmar(<%=lista.get(i).getIdecon()%>)">Deletar</a>
 							</div>
 						</th>
 					</tr>
@@ -55,6 +57,7 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 			</table>
 		</div>
 		<div class="btn-agenda">
+		    <a class="btn-primary" href="index.html">Index</a>
 			<a class="btn-primary" href="novo.html">Novo Contato</a>
 		</div>
 	</div>

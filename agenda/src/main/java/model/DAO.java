@@ -19,13 +19,13 @@ public class DAO {
 	private String driver = "com.mysql.cj.jdbc.Driver";
 	
 	/** The url. */
-	//private String url = "jdbc:"+${DATABASE_URL};
+	private String url = "jdbc:mysql://aws.connect.psdb.cloud/db-agenda?sslMode=VERIFY_IDENTITY";
 	
 	/** The user. */
-	//private String user = ${USER};
+	private String user = "716739o10r16cjb76dgr";
 	
 	/** The password. */
-	//private String password = ${PASSWORD};
+	private String password = "pscale_pw_RA1KRzbfNjFBwLqzJVrjuZZYDcDnQyChf0vZgdVRmjP";
 
 	/**
 	 * Conectar.
@@ -37,7 +37,6 @@ public class DAO {
 		try {
 			Class.forName(driver);
 			con = DriverManager.getConnection(url, user, password);
-			//con = DriverManager.getConnection("jdbc:mysql://aws.connect.psdb.cloud/db-agenda?sslMode=VERIFY_IDENTITY", "au7en66aw5kob3q8gqwr", "pscale_pw_h0HVCmwoBjyGsKqPgPP1M0DxTAiQw9iHxahG6LgH9mK");
 			return con;
 		} catch (Exception e) {
 			System.out.println(e);

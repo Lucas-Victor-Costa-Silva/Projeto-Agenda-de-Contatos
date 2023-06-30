@@ -26,6 +26,7 @@ img{
 	justify-content: center;
 	align-items: center;
 	max-width: 1000px;
+	min-width: 500px;
 	width: 100%;
 	background: #fff;
 	padding: 25px 30px;
@@ -93,7 +94,7 @@ img{
     align-items: center;
     gap: 5px;
 }
-
+	
 .btn-primary{
 	text-align: center;
 	text-decoration: none;
